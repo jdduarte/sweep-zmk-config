@@ -29,11 +29,92 @@
     };
 
     behaviors {
-        bhm: balanced_homerow_mods {
+        lcm: left_control_homerow_mod {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <270>;
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+        };
+        lam: left_alt_homerow_mod {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <220>;
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+        };
+        lgm: left_gui_homerow_mod {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <170>;
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+        };
+        lsm: left_shift_homerow_mod {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <170>;
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+        };
+        rcm: right_control_homerow_mod {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <170>;
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+        };
+        ram: right_alt_homerow_mod {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <120>;
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+        };
+        rgm: right_gui_homerow_mod {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <170>;
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+        };
+        rsm: right_shift_homerow_mod {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <170>;
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+        };
+        smt: space_mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <270>;
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+        };
+        emt: escape_mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <100>;
             quick-tap-ms = <0>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
@@ -45,10 +126,10 @@
 
         default_layer {
             bindings = <
-            &kp Q &kp W &kp E &kp R &kp T                       &kp Y &kp U  &kp I    &kp O   &kp P
-            &bhm LCTRL A &kp S &kp D &kp F &kp G                       &kp H &kp J &kp K &kp L &kp SEMI
-            &kp Z &kp X &kp C &kp V &kp B                       &kp N &kp M  &kp CMMA &kp DOT &kp SLASH
-                            &lt 1 ESC &lt 3 SPACE            &kp RET &lt 2 BSPC
+            &kp Q        &kp W       &kp E       &kp R        &kp T                       &kp Y &kp U        &kp I       &kp O       &kp P
+            &lcm LCTRL A &lam LALT S &lgm LCMD D &lsm LSHFT F &kp G                       &kp H &rsm RSHFT J &rgm RCMD K &ram RALT L &rcm RCTRL SEMI
+            &kp Z        &kp X       &kp C       &kp V        &kp B                       &kp N &kp M        &kp CMMA    &kp DOT     &kp SLASH
+                                                       &emt 1 ESC &smt 3 SPACE        &kp RET &lt 2 BSPC
             >;
         };
 
