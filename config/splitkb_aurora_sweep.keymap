@@ -54,9 +54,9 @@
 
         left_layer {
             bindings = <
-            &kp GRAVE  &kp EXCLM    &kp AT    &kp HASH   &kp DLLR       &trans &kp HOME &kp UP &kp END &trans
-            &kp TAB    &kp PRCNT    &kp CARET &kp AMPS   &kp STAR       &trans &kp LEFT  &kp DOWN &kp RIGHT  &trans
-            &trans     &trans       &trans    &trans     &trans         &kp MINUS &kp GRAVE &kp LBKT &kp RBKT  &kp DEL
+            &kp GRAVE  &kp EXCL     &kp AT    &kp HASH   &kp DLLR       &trans &kp HOME  &kp UP   &kp END   &trans
+            &kp TAB    &kp PRCNT    &kp CARET &kp AMPS   &kp STAR       &trans &kp LEFT  &kp DOWN &kp RIGHT &trans
+            &trans     &trans       &trans    &trans     &trans         &trans &trans    &trans   &trans    &trans
                                                   &trans  &trans      &trans &trans
             >;
         };
