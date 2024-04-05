@@ -92,9 +92,9 @@ ZMK_BEHAVIOR(shft, hold_tap,
 
         left_layer {
             bindings = <
-            &kp GRAVE  &kp EXCL     &kp AT    &kp HASH   &kp DLLR       &trans &kp BSPC  &kp UP   &kp DEL   &trans
-            &kp TAB    &kp PRCNT    &kp CARET &kp AMPS   &kp STAR       &trans &kp LEFT  &kp DOWN &kp RIGHT &trans
-            &trans     &trans       &trans    &trans     &trans         &trans &trans    &trans   &trans    &trans
+            &kp GRAVE    &kp EXCL     &kp AT     &kp HASH   &kp DLLR       &trans &kp BSPC  &kp UP   &kp DEL   &trans
+            &kp TAB      &kp PRCNT    &kp CARET  &kp AMPS   &kp STAR       &trans &kp LEFT  &kp DOWN &kp RIGHT &trans
+            &kp C_BRI_DN &kp C_BRI_UP       &kp C_PREV &kp C_PP   &kp C_NEXT         &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &trans &trans
                                                   &trans  &trans      &trans &trans
             >;
         };
