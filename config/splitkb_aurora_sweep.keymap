@@ -19,8 +19,8 @@
     tapping-term-ms = <200>;
 };
 
-/* source keypos definitions */
-#include "zmk-helpers/keypos-labels/36.h"
+/* source key definitions */
+#include "zmk-helpers/key-labels/36.h"
 
 /* Homerow mods */
 #define QUICK_TAP_MS 175
