@@ -8,7 +8,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-#include "../zmk-nodefree-config/helper.h"
+#include "zmk-helpers/helper.h"
 
 
 &mt {
@@ -20,7 +20,7 @@
 };
 
 /* source keypos definitions */
-#include "../zmk-nodefree-config/keypos_def/keypos_36keys.h"
+#include "zmk-helpers/keypos-labels/36.h"
 
 /* Homerow mods */
 #define QUICK_TAP_MS 175
