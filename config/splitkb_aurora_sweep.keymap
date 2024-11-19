@@ -64,6 +64,7 @@ ZMK_BEHAVIOR(shft, hold_tap,
         compatible = "zmk,keymap";
 
         default_layer {
+            display-name = "qwerty";
             bindings = <
             &kp Q        &kp W       &kp E       &kp R        &kp T                       &kp Y &kp U        &kp I       &kp O       &kp P
             &hml LCTRL A &hml LALT S &hml LCMD D &hml LSHFT F &kp G                       &kp H &hmr RSHFT J &hmr RCMD K &hmr RALT L &hmr RCTRL SEMI
@@ -73,6 +74,7 @@ ZMK_BEHAVIOR(shft, hold_tap,
         };
 
         right_layer {
+            display-name = "code";
             bindings = <
             &kp TILDE  &kp EXCL     &kp AT    &kp HASH   &kp DLLR       &kp DQT &kp LPAR  &kp RPAR   &trans   &kp MINUS
             &kp TAB    &kp PRCNT    &kp CARET &kp AMPS   &kp STAR       &kp SQT &kp LBRC  &kp RBRC   &trans   &kp EQUAL
@@ -82,8 +84,9 @@ ZMK_BEHAVIOR(shft, hold_tap,
         };
 
         bottom_layer {
+            display-name = "number";
             bindings = <
-            &trans   &trans   &trans    &trans   &trans           &trans  &kp N1  &kp N2   &kp N3   &trans
+            &studio_unlock   &trans   &trans    &trans   &trans           &trans  &kp N1  &kp N2   &kp N3   &trans
             &trans   &trans   &trans    &trans   &trans           &trans  &kp N4  &kp N5   &kp N6   &trans
             &bt BT_CLR &bt BT_NXT &bt BT_PRV &trans   &trans           &trans  &kp N7  &kp N8   &kp N9   &kp N0
                                             &trans  &trans     &trans &trans
@@ -91,6 +94,7 @@ ZMK_BEHAVIOR(shft, hold_tap,
         };
 
         left_layer {
+            display-name = "nav";
             bindings = <
             &kp GRAVE    &kp EXCL     &kp AT     &kp HASH   &kp DLLR       &trans &kp BSPC  &kp UP   &kp DEL   &trans
             &kp TAB      &kp PRCNT    &kp CARET  &kp AMPS   &kp STAR       &trans &kp LEFT  &kp DOWN &kp RIGHT &trans
